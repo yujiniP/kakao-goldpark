@@ -1,12 +1,16 @@
 import React from 'react'
 
 const Button = (props) => {
+  const {
+    name,
+    width,
+  } = props;
 
   return (
-    <div>
-      {props.name}
+    <div className={`btn-box`} style={{width:`${width}`}}>
+      {name}
     </div>
-  )
-}
+  );
+};
 
 export default Button

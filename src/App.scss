@@ -1,0 +1,80 @@
+.box {
+  width: 100px; 
+  height: 100px; 
+  border:1px solid #ff0000;
+}
+
+.flex {display: flex;}
+
+.member-join {
+  display: flex;
+  flex-direction: column;
+  max-width: 368px;
+  padding: 20px;
+
+  .inputBox {
+    margin-top: 20px;
+    
+    input {
+      width: 100%;
+      margin-top: 10px;
+    }
+  }
+
+  .privacy {
+    margin-top: 30px;
+
+    .input-area {
+      display: flex;
+      span {
+        width: 20%;
+      }
+    }
+  }
+
+  p {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+
+    .select-sliding {
+      width: 45px;
+      border: 2px solid #303033;
+      background-color: #378623;
+      height: 20px;
+      border-radius: 44%;
+      position: relative;
+
+      &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        height: 18px;
+        width: 23px;
+        border: 1px solid #fff;
+        display: block;
+        border-radius: 37%;
+        background-color: #fff;
+        cursor: pointer;
+        -webkit-border-radius: 37%;
+        -moz-border-radius: 37%;
+        -ms-border-radius: 37%;
+        -o-border-radius: 37%;
+      }
+    }
+
+    .select-sliding.right::before {
+      right: 0;
+      left: initial;
+    }
+  }
+  
+
+  
+  .btn-box {
+    height: 20px;
+    border: 1px solid #adacb6;
+    text-align: center;
+    cursor: pointer;
+  }
+}
